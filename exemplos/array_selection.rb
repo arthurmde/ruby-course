@@ -1,0 +1,5 @@
+my_array = [1, 2, 3, 4, 5, 6]
+my_array.select { |a| a > 3 }     #=> [4, 5, 6]
+my_array.reject { |a| a < 3 }     #=> [3, 4, 5, 6]
+my_array.drop_while { |a| a < 4 } #=> [4, 5, 6]
+my_array                          #=> [1, 2, 3, 4, 5, 6]
